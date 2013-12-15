@@ -1,0 +1,9 @@
+body
+{
+    font-family: "Helvetica Neue";
+    line-height: 1.6;
+}
+input,textarea
+{
+    border: 1px solid #CCC;
+}
