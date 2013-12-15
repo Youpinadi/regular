@@ -13,19 +13,21 @@
 <body ng-app  ng-controller="MainCtrl">
     <div class="container">
         <h1>Regular - now you have two problems</h1>
-        <h2>Your regular expression</h2>
+        <h2>Regular expression</h2>
         <div class="row mrg-btm-lg">
             <input type="text" ng-model="regex" class="span-12 pdg-sm font-lg brd-rad-md" placeholder="Enter your regex" ng-change="applyRegex()">
         </div>
-        <div class="row font-md"><code>/{{ regex }}/{{ flags }}</code> or <code>new RegExp("{{ regex }}", "{{ flags }}")</code></div>
+        <div class="row font-md">
+            Expression litteral: <code>/{{ regex }}/{{ flags }}</code><br/>
+            RegExp constructor: <code>new RegExp("{{ regex }}", "{{ flags }}")</code></div>
 
         <div class="row">
             <div class="col-6">
-                <h2>Your test string</h2>
+                <h2>Test string</h2>
                 <textarea ng-model="stringToTest" ng-change="applyRegex()" rows="6" class="span-5 pdg-sm font-lg brd-rad-md"></textarea>
             </div>
             <div class="col-6">
-                <h2>Your match results</h2>
+                <h2>Match results</h2>
                 <pre class="pdg-sm" ng-bind-html="highlightedResults"></pre>
             </div>
         </div>

@@ -6,4 +6,5 @@ body
 input,textarea
 {
     border: 1px solid #CCC;
+    outline: none;
 }
